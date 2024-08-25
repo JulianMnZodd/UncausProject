@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enfermeros",
+  "info": {
+    "singularName": "enfermero",
+    "pluralName": "enfermeros",
+    "displayName": "enfermero",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "matricula": {
+      "type": "string",
+      "required": true
+    },
+    "persona": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::persona.persona"
+    }
+  }
+}

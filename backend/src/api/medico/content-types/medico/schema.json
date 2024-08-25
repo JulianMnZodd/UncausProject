@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medicos",
+  "info": {
+    "singularName": "medico",
+    "pluralName": "medicos",
+    "displayName": "medico",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "especializacion": {
+      "type": "string",
+      "required": true
+    },
+    "persona": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::persona.persona"
+    },
+    "matricula": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
